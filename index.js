@@ -10,7 +10,7 @@ if ("document" in global) globals.document = global.document;
 global.window = document.parentWindow;
 global.document = document;
 
-module.exports = require("./d3");
+module.exports = global.window.d3;
 
 // Restore old globals.
 if ("d3" in globals) global.d3 = globals.d3; else delete global.d3;

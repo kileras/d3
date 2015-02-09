@@ -1,7 +1,7 @@
 {
-  "name": "d3",
-  "repository": "mbostock/d3",
-  "description": "A JavaScript visualization library for HTML and SVG.",
+  "name": "d3-noglobal",
+  "repository": "kileras/d3",
+  "description": "A fork of d3 that is exactly the same but with no global by default if you load d3.js using a module system",
   "keywords": [
     "dom",
     "w3c",

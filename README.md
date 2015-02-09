@@ -1,9 +1,3 @@
-# Data-Driven Documents
+# D3 fork with no global by default
 
-<a href="http://d3js.org"><img src="http://d3js.org/logo.svg" align="left" hspace="10" vspace="6"></a>
-
-**D3.js** is a JavaScript library for manipulating documents based on data. **D3** helps you bring data to life using HTML, SVG and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
-
-Want to learn more? [See the wiki.](https://github.com/mbostock/d3/wiki)
-
-For examples, [see the gallery](https://github.com/mbostock/d3/wiki/Gallery) and [mbostock’s bl.ocks](http://bl.ocks.org/mbostock).
+This is just a fork of D3 (https://github.com/mbostock/d3) and it will have the same functionality that d3 has, the only change is the fact that if you load d3.js directly and you have a module system in place it won't create the global d3 object. You can still get the global d3 if you load it throught index.js, that now is the responsible of exposing it to the global context. Also there is a second change which is that the jsdom dependency has been removed to make it easier to use in a windows environment.

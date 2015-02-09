@@ -1,5 +1,5 @@
 {
-  "name": "d3",
+  "name": "d3-noglobal",
   "version": "3.5.3",
   "main": "d3.js",
   "scripts": [
